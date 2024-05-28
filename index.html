@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>YouTube</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="logo">YouTube</div>
+        <div class="search-container">
+            <input type="text" class="search-bar" placeholder="Search">
+            <button class="search-button">🔍</button>
+        </div>
+        <div class="user-menu">
+            <button class="menu-button">📤</button>
+            <button class="menu-button">🔔</button>
+            <button class="menu-button">👤</button>
+        </div>
+    </header>
+    <nav>
+        <ul>
+            <li>Home</li>
+            <li>Trending</li>
+            <li>Subscriptions</li>
+            <li>Library</li>
+        </ul>
+    </nav>
+    <main>
+        <div class="video-grid">
+            <div class="video-thumbnail" data-title="Live your live as a Developers" data-channel="GoogleDevelopers" data-videoid="M7lc1UVf-VE">
+                <img src="images 1.jpeg" alt=About YouTubers life >
+                <div class="video-info">
+                    <h3>YouTube Developers Live: Embedded Web player customization</h3>
+                    <p>GoogleDevelopers</p>
+                </div>
+            </div>
+            <div class="video-thumbnail" data-title="Build YouTube in React|React & Redux Javascript Tutorial using the YouTube Data API v3" data-channel="Jan Goebel" data-videoid="E7wJTI-1dvQ">
+                <img src="images 2.jpeg" alt="Thumbnail 2">
+                <div class="video-info">
+                    <h3>Build YouTube in React|React & Redux Javascript Tutorial using the YouTube Data API v3</h3>
+                    <p>Jan Goebel</p>
+                </div>
+            </div>
+
+    
+
+       
+       
+        </div>
+    </main>
+    <div class="modal" id="videoModal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2 id="modal-title"></h2>
+            <p id="modal-channel"></p>
+            <div class="video-container">
+                <iframe id="modal-video" width="560" height="315" src="" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
